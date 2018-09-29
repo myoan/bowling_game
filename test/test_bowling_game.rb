@@ -2,7 +2,7 @@ require "test_helper"
 require "./bowling_game"
 
 class TestBowlingGame < Minitest::Test
-  def test_simple_roll
+  def test_all_roll_are_gutter
     game = BowlingGame.new
     game.roll(0)
     assert_equal game.score, 0
