@@ -1,4 +1,5 @@
 require "test_helper"
+require "./bowling_game"
 
 class TestBowlingGame < Minitest::Test
   def test_simple_roll
