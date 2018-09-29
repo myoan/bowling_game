@@ -11,8 +11,12 @@ class BowlingGame
       @score += pins
       @is_spare = false
     end
-    @is_spare = true if @before_shot + pins == 10
+    @is_spare = true if spare?(pins)
     @before_shot = pins
+  end
+
+  def spare?(pins)
+    @before_shot + pins == 10
   end
 
   def score
